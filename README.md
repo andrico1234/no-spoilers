@@ -1,8 +1,10 @@
-# <no-spoilers>
+# no-spoilers
 
-A progressively-enhanced spoiler tag that works without JavaScript.
+A progressively-enhanced spoiler tag that works in any frontend. Built using web components.
 
 ![Example of no-spoilers](./static/demo.gif)
+
+> `no-spoilers` was built for my web component course, Component Odyssey. If you'd like to build your first web component library, then you can [register your interest](https://component-odyssey.com/subscribe).
 
 ## Installation
 
