@@ -16,7 +16,6 @@ button {
 }
 
 .spoiler-set {
-  border: 1px solid var(--color);
   border-radius: 2px;
   margin-block: 40px;
 }

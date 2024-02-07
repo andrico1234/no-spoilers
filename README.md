@@ -1,6 +1,8 @@
-# \<no-spoilers>
+# <no-spoilers>
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+A progressively-enhanced spoiler tag that works without JavaScript.
+
+![Example of no-spoilers](./static/demo.gif)
 
 ## Installation
 
@@ -12,24 +14,19 @@ npm i no-spoilers
 
 ```html
 <script type="module">
-  import 'no-spoilers/no-spoilers.js';
+  import "no-spoilers/no-spoilers.js";
 </script>
 
-<no-spoilers></no-spoilers>
+<no-spoilers>
+  <details>
+    <p>This is a spoiler</p>
+  </details>
+</no-spoilers>
 ```
 
+Note: The `details` tag is optional but ensures that if the web component fails to load that the spoiler won't be revealed by default. `no-spoilers` checks to see if a single details element is the only child and if so, it will rmeove the `details` element and replace it with the `details`'s children.
 
 
-## Tooling configs
+### Attributes
 
-For most of the tools, the configuration is in the `package.json` to minimize the amount of files in your project.
-
-If you customize the configuration a lot, you can consider moving them to individual files.
-
-## Local Demo with `web-dev-server`
-
-```bash
-npm start
-```
-
-To run a local development server that serves the basic demo located in `demo/index.html`
+- `button-text` - Displays the text on the button that reveals the spoiler. Default: "Reveal Spoiler"
