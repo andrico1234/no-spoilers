@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="demo">
+    <h1>Movie Spoilers</h1>
+    <p>Demo for the no-spoilers web component</p>
+    <a href="">Link to GitHub</a>
+    <div class="spoiler-set">
+      <h2>Spoilers for the Sixth Sense</h2>
+      <no-spoilers button-text="Show spoilers...">
+        <details>
+          <h3>He was dead the entire time</h3>
+        </details>
+      </no-spoilers>
+    </div>
+  </div>
+
+  <script type="module">
+    import '../no-spoilers.js';
+  </script>
+</body>
+
+</html>
