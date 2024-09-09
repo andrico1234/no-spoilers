@@ -6,16 +6,24 @@
 body {
   font-family: var(--primary-font-family);
   max-width: 900px;
+  margin-block: 32px;
   margin-inline: auto;
   text-align: center;
 }
 
 button {
   width: fit-content;
-  margin-inline: auto;
 }
 
 .spoiler-set {
   border-radius: 2px;
   margin-block: 40px;
+}
+
+[role=group] {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
 }
