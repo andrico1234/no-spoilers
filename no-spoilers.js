@@ -42,6 +42,7 @@ class NoSpoilers extends HTMLElement {
 
       if (!content) {
         console.warn("Ensure that you pass through a single <details> element as a child of <no-spoilers>. This ensures that behvaviour works even JavaScript fails to load.");
+        return;
       }
 
       details.replaceWith(content);
@@ -49,6 +50,7 @@ class NoSpoilers extends HTMLElement {
       content.inert = true;
     } else {
       console.warn("Ensure that you pass through a single <details> element as a child of <no-spoilers>. This ensures that behvaviour works even JavaScript fails to load.");
+      return;
     }
 
     Array.from(this.children).forEach(child => {

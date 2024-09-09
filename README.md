@@ -26,9 +26,13 @@ npm i no-spoilers
 </no-spoilers>
 ```
 
-Note: The `details` tag is optional but ensures that if the web component fails to load that the spoiler won't be revealed by default. `no-spoilers` checks to see if a single details element is the only child and if so, it will rmeove the `details` element and replace it with the `details`'s children.
+Note: `no-spoilers` will not render if the child content is not a single `details` element. This is to ensure that if JavaScript doesn't load, the behaviour fallasback to a standard `details` element.
 
 
 ### Attributes
 
 - `button-text` - Displays the text on the button that reveals the spoiler. Default: "Reveal Spoiler"
+
+### Notes
+
+I'd like to shoutout this [article](https://www.scottohara.me/blog/2024/08/22/spoiler.html) by Scott O'Hara about building an accessible spoiler element. It was a great resource for improving this component.
