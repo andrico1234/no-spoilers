@@ -58,6 +58,7 @@ class NoSpoilers extends HTMLElement {
     })
 
     this.setAttribute('role', 'group');
+    this.setAttribute('aria-label', 'Spoilers');
 
     const buttonEl = document.createElement("button");
 
